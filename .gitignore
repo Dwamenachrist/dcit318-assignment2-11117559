@@ -1,0 +1,58 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+*.userosscache
+*.userprefs
+*.sln.ide
+*.vsidx
+*.VC.db
+*.VC.opendb
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Rr]eleases/
+[Bb]uild/
+[Bb]uilds/
+[Bb]ld/
+[Tt]emp/
+[Tt]mp/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# .NET
+[Pp]ackages/
+*.nupkg
+*.snupkg
+[Tt]est[Rr]esult*/
+*.cache
+*.ide/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Logs and caches
+*.log
+*.tlog
+*.cache
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Rider/Resharper
+*.sln.iml
+.idea/
+.ReSharper*/
+*_Resharper.*
+
+# NuGet
+project.lock.json
+.nuget/
