@@ -1,15 +1,7 @@
-﻿using Inheritance;
+﻿using AbstractShapes;
 
-var payments = new List<PaymentMethod>
-{
-    new MobileMoneyPayment(),
-    new CreditCardPayment(),
-    new CryptoPayment()
-};
+var shapes = new List<Shape> { new Circle(3), new Rectangle(4, 5) };
+foreach (var s in shapes) Console.WriteLine($"{s.GetType().Name} area: {s.GetArea():0.00}");
 
-foreach (var payment in payments)
-{
-    payment.Process(100.00m);
-}
 Console.WriteLine("Press Enter to exit...");
 Console.ReadLine();
