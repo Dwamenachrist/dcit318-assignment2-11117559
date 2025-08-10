@@ -1,17 +1,7 @@
-﻿using Abstract;
+﻿using InheritanceAnimals;
 
-decimal subtotal = 120;
+var animals = new List<Animal> { new Animal(), new Dog(), new Cat() };
+foreach (var a in animals) a.MakeSound();
 
-var strategies = new List<PricingStrategy>
-{
-    new PercentageDiscountStrategy(10),
-    new FixedDiscountStrategy(8),
-};
-
-foreach (var strategy in strategies)
-{
-    var finalPrice = strategy.Calculate(subtotal);
-    Console.WriteLine($"Strategy: {subtotal:0.00} -> Final Price: {finalPrice:0.00} via {strategy.GetType().Name}");
-}
 Console.WriteLine("Press Enter to exit...");
 Console.ReadLine();
